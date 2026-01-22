@@ -130,31 +130,6 @@ w = width.analyze_term(pair)
 print(f"Width: {w.width} qubits")  # 2
 ```
 
-## Project Structure
-
-```
-qllr-framework/
-├── src/qllr/
-│   ├── __init__.py          # Package exports
-│   ├── core/
-│   │   ├── syntax.py        # AST definitions
-│   │   └── types.py         # Type system
-│   ├── typing/
-│   │   ├── typechecker.py   # Type checking algorithm
-│   │   └── orthogonality.py # Orthogonality checking
-│   ├── compilation/
-│   │   ├── circuit.py       # Quantum circuit representation
-│   │   └── circuit_extraction.py  # Term → Circuit
-│   └── analysis/
-│       ├── complexity.py    # Time complexity analysis
-│       └── width.py         # Space complexity analysis
-├── tests/
-│   ├── unit/               # Unit tests
-│   └── integration/        # Integration tests
-├── examples/               # Example programs
-└── docs/                   # Documentation
-```
-
 ## Running Tests
 
 ```bash
